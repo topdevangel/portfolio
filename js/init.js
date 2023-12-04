@@ -730,7 +730,8 @@ function contact_wa(){
 	
 	"use strict";
 
-	jQuery('#contact_form').on("submit",function(e){
+	//jQuery('#contact_form').on("submit",function(e){
+	jQuery('#send_message').on("click", function(e){
 		console.log('submit detected');
 		e.preventDefault();
 		var fname = jQuery('input#name').val();

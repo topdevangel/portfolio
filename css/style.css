@@ -1667,7 +1667,11 @@ body.resize .arlo_tm_mainpart{
     float:left;
     background-color:#fff;
     padding:80px 20px 90px;
-    box-shadow:0 0 50px rgba(0,0,0,.2)
+    box-shadow:0 0 50px rgba(0,0,0,.2);
+
+    opacity: 0;
+    overflow: hidden;
+    height: 0;
 }
 .arlo_tm_partners .wrapper{
     width:100%;

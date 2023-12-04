@@ -730,12 +730,12 @@ function contact_wa(){
 	
 	"use strict";
 
-	jQuery('#contact_form').on('submit',function(e){
+	jQuery('#contact_form').on("submit",function(e){
 		console.log('submit detected');
 		e.preventDefault();
-		fname = jQuery('input#name').val();
-		femail = jQuery('input#email').val();
-		fmessage = jQuery('textarea#message').val(); 
+		var fname = jQuery('input#name').val();
+		var femail = jQuery('input#email').val();
+		var fmessage = jQuery('textarea#message').val(); 
 		window.location.href = 'https://api.whatsapp.com/send?phone=573182140969&text=Nombre:'+fname+'-Email:'+femail+'Message:'+fmessage;
 	})
 }
